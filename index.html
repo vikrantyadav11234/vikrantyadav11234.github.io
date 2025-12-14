@@ -114,6 +114,23 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Orpheus TTS Optimization</h3>
+                        <span class="project-tag">Inference</span>
+                    </div>
+                    <p>High-throughput TTS deployment using TensorRT-LLM and Triton Inference Server with paged attention & streaming. Achieved sub-120ms TTFT and 230 tokens/sec throughput on H100 GPU at full precision, while optimizing KV-Cache memory management for improved multi-request concurrency.</p>
+                    <div class="project-tech">
+                        <span>TensorRT-LLM</span>
+                        <span>Triton</span>
+                        <span>Paged Attention</span>
+                        <span>kv_cache</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-header">
@@ -123,6 +140,8 @@
                     <p>End-to-end AI system for document classification and structured data extraction from invoices, bank statements, IDs, legal documents, and prescriptions. Handles digital, scanned, and handwritten formats with high accuracy.</p>
                     <div class="project-tech">
                         <span>Qwen2.5-VL</span>
+                        <span>OCR</span>
+                        <span>Docling</span>
                         <span>GPTQ</span>
                         <span>vLLM</span>
                         <span>FastAPI</span>
@@ -135,12 +154,12 @@
                         <h3>Multilingual PDF Translation System</h3>
                         <span class="project-tag">Production</span>
                     </div>
-                    <p>AI-powered tool that converts English PDFs to 22 Indian regional languages while preserving original layout and design. Fine-tuned google/mt5-large for NMT and optimized facebook/seamlessM4T for production deployment.</p>
+                    <p>AI-powered tool that converts English PDFs to 22 Indian regional languages while preserving original layout and design.</p>
                     <div class="project-tech">
-                        <span>MT5</span>
-                        <span>SeamlessM4T</span>
-                        <span>LoRA</span>
-                        <span>GCP</span>
+                        <span>GPT API</span>
+                        <span>PyMuPDF</span>
+                        <span>OCR</span>
+                                             
                     </div>
                 </div>
 
@@ -159,20 +178,21 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Orpheus TTS Optimization</h3>
-                        <span class="project-tag">Inference</span>
+                        <h3>AI-powered Smart Client Onboarding & Agent Support System</h3>
+                        <span class="project-tag">Production</span>
                     </div>
-                    <p>High-throughput TTS deployment using TensorRT-LLM and Triton Inference Server with paged attention & streaming. Reduced KV-Cache memory footprint and improved concurrency on single-GPU (L40) setups.</p>
+                    <p>Created an intelligent onboarding API with FastAPI that analyzes customer-agent conversations in real-time. Extracts sentiment, conversation outcomes, customer satisfaction scores, and identifies gaps in agent knowledge by detecting unanswered queries. Generates actionable recommendations to improve future interactions. Implements a feedback loop where management reviews flagged questions, and responses are automatically integrated into the agent knowledge base for continuous performance improvement.</p>
                     <div class="project-tech">
-                        <span>TensorRT-LLM</span>
-                        <span>Triton</span>
-                        <span>Paged Attention</span>
-                        <span>L40 GPU</span>
+                        <span>FastAPI</span>
+                        <span>NLP</span>
+                        <span>Sentiment Analysis</span>
+                        <span>Real-time Analytics</span>
+                        <span>Gemini API</span>
                     </div>
                 </div>
+
 
                 <!-- Project 5 -->
                 <div class="project-card">
@@ -212,6 +232,15 @@
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
+
+                <div class="skill-category"> 
+                    <h3>Inferencing</h3>
+                    <ul>
+                        <li>vLLM, TensorRT</li>
+                        <li>TensorRT-LLM, Triton Inference Server</li>
+                    </ul>
+                </div>
+                    
                 <!-- Category 1 -->
                 <div class="skill-category">
                     <h3>GenAI & LLMs</h3>
@@ -220,7 +249,8 @@
                         <li>RAG Systems, Vector DBs (FAISS, Chroma)</li>
                         <li>Transformers, Attention Mechanisms</li>
                         <li>Prompt Engineering, Fine-tuning</li>
-                        <li>LLM Quantization (GPTQ, LoRA)</li>
+                        <li>LLM Quantization (GPTQ, AWQ)</li>
+                        
                     </ul>
                 </div>
 
@@ -229,8 +259,8 @@
                     <h3>ML & Deep Learning</h3>
                     <ul>
                         <li>PyTorch, TensorFlow, Keras</li>
-                        <li>CNN, NLP/NLU, Computer Vision</li>
-                        <li>Scikit-learn, XGBoost</li>
+                        <li>CNN, NLP/NLU</li>
+                        <li>Scikit-learn, Metplotlib, Seaborn, Pandas, Numpy</li>
                         <li>Statistics, Feature Engineering</li>
                         <li>Model Evaluation & Tuning</li>
                     </ul>
