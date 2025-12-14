@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vikrant - AI/ML Engineer specializing in Document AI, Speech AI, and Generative AI systems">
+    <title>Vikrant | AI/ML Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Vikrant</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section - REPLACE the existing hero section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <p class="hero-label">AI/ML Engineer</p>
+                    <h1 class="hero-title">Building production-ready<br><span class="gradient-text">Document AI & GenAI systems</span></h1>
+                    <p class="hero-description">Specializing in LLM optimization, RAG pipelines, and scalable AI deployments with LangChain, vLLM, and Triton Inference Server</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="https://github.com/vikrantyadav11234" target="_blank" class="btn btn-secondary">View GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/profile.jpg" alt="Vikrant - AI/ML Engineer">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>AI/ML Engineer with 1+ year of experience designing production-ready Document AI, Speech AI, and Generative AI systems. I specialize in building end-to-end AI platforms that solve real-world problems at scale.</p>
+                <p>My work spans LLM quantization (GPTQ), RAG system development, multilingual NMT models, and high-throughput inference optimization using TensorRT-LLM and Triton. I've deployed models like Qwen2.5-VL, Meta-LLaMA 3.1, and Seamless M4T into production environments on GCP and OVH Cloud.</p>
+                <p>Previously taught Machine Learning and Neural Networks at IET Lucknow, where I mentored Instrumentation Engineering students while completing advanced certifications in Data Science and AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">June 2024 - Present</span>
+                        <h3>AI/ML Engineer</h3>
+                        <h4>Aiverbalyze Technologies Pvt. Ltd</h4>
+                        <ul>
+                            <li>Built <strong>DocSense</strong>: AI system for document classification and structured JSON extraction across invoices, bank statements, IDs, legal docs, and prescriptions in digital, scanned, and handwritten formats</li>
+                            <li>Performed <strong>GPTQ quantization</strong> on Qwen2.5-VL-7B-Instruct at 8-bit and 4-bit precision, deployed with <strong>vLLM</strong> for high-speed inference in production</li>
+                            <li>Developed AI-based PDF translation tool converting English PDFs to Indian regional languages while preserving layout and design</li>
+                            <li>Enhanced client onboarding APIs using FastAPI with <strong>Customer-Agent Conversation Analysis</strong> feature to detect unanswered queries in real-time</li>
+                            <li>Fine-tuned Meta-LLaMA 3.1-8B with <strong>LoRA</strong> using Unsloth AI library for efficient text generation on low-resource setups</li>
+                            <li>Deployed <strong>Orpheus TTS Model</strong> using TensorRT-LLM + Triton Inference Server with paged attention & streaming, reducing KV-Cache memory footprint and improving concurrency on single-GPU (L40) setups</li>
+                            <li>Converted PyTorch models to <strong>ONNX</strong> and deployed using NVIDIA Triton Inference Server for optimized inference</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2021 - Aug 2023</span>
+                        <h3>Assistant Professor</h3>
+                        <h4>Institute of Engineering and Technology, Lucknow</h4>
+                        <ul>
+                            <li>Taught Digital Electronics, Machine Learning, and Artificial Neural Networks to Instrumentation Engineering students</li>
+                            <li>Led labs for core instrumentation subjects and mentored students on real-world AI applications</li>
+                            <li>Completed certification in Data Science and Advanced AI, gaining expertise in Python, SQL, Statistics, ML, Deep Learning, CNN, NLP, and Generative AI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>DocSense - Document Intelligence Platform</h3>
+                        <span class="project-tag">Production</span>
+                    </div>
+                    <p>End-to-end AI system for document classification and structured data extraction from invoices, bank statements, IDs, legal documents, and prescriptions. Handles digital, scanned, and handwritten formats with high accuracy.</p>
+                    <div class="project-tech">
+                        <span>Qwen2.5-VL</span>
+                        <span>GPTQ</span>
+                        <span>vLLM</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Multilingual PDF Translation System</h3>
+                        <span class="project-tag">Production</span>
+                    </div>
+                    <p>AI-powered tool that converts English PDFs to 22 Indian regional languages while preserving original layout and design. Fine-tuned google/mt5-large for NMT and optimized facebook/seamlessM4T for production deployment.</p>
+                    <div class="project-tech">
+                        <span>MT5</span>
+                        <span>SeamlessM4T</span>
+                        <span>LoRA</span>
+                        <span>GCP</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>YouTube RAG Chatbot</h3>
+                        <span class="project-tag">LangChain</span>
+                    </div>
+                    <p>LangChain-based conversational AI using FAISS Vector Database and Azure OpenAI embeddings. Enables contextual Q&A from YouTube transcripts with RAG pipeline integration and conversational memory.</p>
+                    <div class="project-tech">
+                        <span>LangChain</span>
+                        <span>FAISS</span>
+                        <span>Azure OpenAI</span>
+                        <span>RAG</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Orpheus TTS Optimization</h3>
+                        <span class="project-tag">Inference</span>
+                    </div>
+                    <p>High-throughput TTS deployment using TensorRT-LLM and Triton Inference Server with paged attention & streaming. Reduced KV-Cache memory footprint and improved concurrency on single-GPU (L40) setups.</p>
+                    <div class="project-tech">
+                        <span>TensorRT-LLM</span>
+                        <span>Triton</span>
+                        <span>Paged Attention</span>
+                        <span>L40 GPU</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Customer Segmentation Analysis</h3>
+                        <span class="project-tag">ML</span>
+                    </div>
+                    <p>Unsupervised learning model to segment customers based on RFM (Recency, Frequency, Monetary) patterns. Identified sales trends by day, month, season, and top-performing items for business intelligence.</p>
+                    <div class="project-tech">
+                        <span>Clustering</span>
+                        <span>RFM Analysis</span>
+                        <span>Seaborn</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Homestays Price Prediction</h3>
+                        <span class="project-tag">ML + NLP</span>
+                    </div>
+                    <p>Predictive model estimating log_price of homestay listings using property characteristics, amenities, and host info. Integrated sentiment analysis on descriptions and geospatial analysis for location-based pricing insights.</p>
+                    <div class="project-tech">
+                        <span>NLP</span>
+                        <span>Sentiment Analysis</span>
+                        <span>Geospatial</span>
+                        <span>Regression</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Category 1 -->
+                <div class="skill-category">
+                    <h3>GenAI & LLMs</h3>
+                    <ul>
+                        <li>LangChain, AI Agents, Tool Calling</li>
+                        <li>RAG Systems, Vector DBs (FAISS, Chroma)</li>
+                        <li>Transformers, Attention Mechanisms</li>
+                        <li>Prompt Engineering, Fine-tuning</li>
+                        <li>LLM Quantization (GPTQ, LoRA)</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skill-category">
+                    <h3>ML & Deep Learning</h3>
+                    <ul>
+                        <li>PyTorch, TensorFlow, Keras</li>
+                        <li>CNN, NLP/NLU, Computer Vision</li>
+                        <li>Scikit-learn, XGBoost</li>
+                        <li>Statistics, Feature Engineering</li>
+                        <li>Model Evaluation & Tuning</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skill-category">
+                    <h3>Optimization & Deployment</h3>
+                    <ul>
+                        <li>vLLM, TensorRT-LLM, Triton Server</li>
+                        <li>ONNX, Model Quantization</li>
+                        <li>KV-Cache Tuning, Paged Attention</li>
+                        <li>GCP, Azure, OVH Cloud</li>
+                        <li>FastAPI, Flask, Docker</li>
+                    </ul>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="skill-category">
+                    <h3>Programming & Tools</h3>
+                    <ul>
+                        <li>Python, SQL</li>
+                        <li>Pandas, NumPy, Matplotlib, Seaborn</li>
+                        <li>Hugging Face, SentencePiece</li>
+                        <li>Git, GitHub, Jupyter</li>
+                        <li>Linux, Shell Scripting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Master of Technology</h3>
+                    <h4>National Institute of Technology, Warangal</h4>
+                    <p>Telangana, India</p>
+                </div>
+                <div class="education-card">
+                    <h3>Bachelor of Technology</h3>
+                    <h4>Institute of Engineering and Technology</h4>
+                    <p>Lucknow, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">I'm currently open to AI/ML Engineer roles and consulting opportunities. Let's connect!</p>
+            <div class="contact-links">
+                <a href="mailto:vikranty622@gmail.com" class="contact-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    vikranty622@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/vikrantyadav1234" target="_blank" class="contact-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn Profile
+                </a>
+                <a href="https://github.com/vikrantyadav11234" target="_blank" class="contact-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    GitHub Profile
+                </a>
+                <a href="tel:+919411063933" class="contact-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    +91 9411063933
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vikrant. Built with HTML, CSS & JavaScript. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
