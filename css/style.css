@@ -278,7 +278,7 @@ section {
     text-align: center;
 }
 /* ============================================
-   About Section with Animation
+   About Section with AI Animation
 ============================================ */
 .about-wrapper {
     display: grid;
@@ -334,57 +334,154 @@ section {
     text-align: center;
 }
 
-.wave-emoji {
-    font-size: 6rem;
-    display: inline-block;
-    animation: wave 1.5s ease-in-out infinite;
-    transform-origin: 70% 70%;
-    margin-bottom: 1rem;
+/* AI Brain Animation */
+.ai-brain-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
 }
 
-@keyframes wave {
+.ai-brain {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.5));
+}
+
+.brain-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawBrain 3s ease-in-out forwards, pulseBrain 2s ease-in-out 3s infinite;
+}
+
+@keyframes drawBrain {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes pulseBrain {
     0%, 100% {
-        transform: rotate(0deg);
-    }
-    10%, 30% {
-        transform: rotate(14deg);
-    }
-    20%, 40% {
-        transform: rotate(-8deg);
+        stroke-width: 3;
+        filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
     }
     50% {
-        transform: rotate(14deg);
+        stroke-width: 4;
+        filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.8));
     }
-    60% {
-        transform: rotate(-4deg);
+}
+
+/* Neural nodes animation */
+.node {
+    animation: nodeGlow 2s ease-in-out infinite;
+}
+
+.node1 { animation-delay: 0s; }
+.node2 { animation-delay: 0.2s; }
+.node3 { animation-delay: 0.4s; }
+.node4 { animation-delay: 0.6s; }
+.node5 { animation-delay: 0.8s; }
+.node6 { animation-delay: 1s; }
+
+@keyframes nodeGlow {
+    0%, 100% {
+        r: 4;
+        opacity: 1;
     }
-    70% {
-        transform: rotate(10deg);
+    50% {
+        r: 6;
+        opacity: 0.6;
     }
-    80% {
-        transform: rotate(0deg);
+}
+
+/* Connection lines pulse */
+.connection {
+    animation: connectionPulse 2s ease-in-out infinite;
+}
+
+@keyframes connectionPulse {
+    0%, 100% {
+        opacity: 0.3;
+        stroke-width: 2;
+    }
+    50% {
+        opacity: 0.8;
+        stroke-width: 3;
+    }
+}
+
+/* Floating particles */
+.ai-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.ai-particles::before,
+.ai-particles::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: floatParticle 4s ease-in-out infinite;
+}
+
+.ai-particles::before {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.ai-particles::after {
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+@keyframes floatParticle {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.5);
+        opacity: 1;
     }
 }
 
 .greeting-text {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: textPulse 2s ease-in-out infinite;
+    animation: fadeInUp 1s ease-out 0.3s both;
     margin: 0;
 }
 
-@keyframes textPulse {
-    0%, 100% {
-        opacity: 1;
-        transform: scale(1);
+.greeting-subtitle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-top: 0.5rem;
+    font-weight: 500;
+    animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    50% {
-        opacity: 0.8;
-        transform: scale(1.05);
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -410,14 +507,20 @@ section {
         padding: 2rem;
     }
     
-    .wave-emoji {
-        font-size: 4rem;
+    .ai-brain-container {
+        width: 150px;
+        height: 150px;
     }
     
     .greeting-text {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+    
+    .greeting-subtitle {
+        font-size: 1rem;
     }
 }
+
 
 /* ============================================
    Experience Section
