@@ -106,7 +106,8 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
 
 .hero-content {
@@ -186,6 +187,7 @@ body {
 /* ============================================
    Hero Section with Photo
 ============================================ */
+
 .hero-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -198,12 +200,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 400px; /* Added min-height */
 }
 
 .hero-image img {
     width: 100%;
     max-width: 400px;
     height: auto;
+    aspect-ratio: 1; /* Keeps image square/proportional */
+    object-fit: cover; /* Ensures image fills space properly */
     border-radius: 20px;
     border: 2px solid var(--border);
     position: relative;
@@ -245,6 +250,7 @@ body {
     .hero-wrapper {
         grid-template-columns: 1fr;
         gap: 3rem;
+        text-align: center;
     }
     
     .hero-image {
